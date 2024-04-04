@@ -1,0 +1,14 @@
+Andrew:
+Xbox
+ASUS
+
+John:
+PlayStation
+PC
+
+AP:
+iPhone
+laptop
+
+Nico:
+macbook
