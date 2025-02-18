@@ -2042,6 +2042,6 @@
          </points>
       </Polygon>
       <Text layoutX="70.0" layoutY="554.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current Move" wrappingWidth="122.13672637939453" />
-      <Circle fx:id="circ01" fill="RED" layoutX="39.0" layoutY="550.0" onMouseClicked="#gteHexID" radius="25.0" stroke="#0900ff" strokeType="OUTSIDE" />
+      <Circle fx:id="circ01" fill="RED" layoutX="39.0" layoutY="550.0" radius="25.0" stroke="#0900ff" strokeType="OUTSIDE" />
    </children>
 </AnchorPane>
