@@ -6,11 +6,17 @@ import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.shape.Circle;
 import javafx.scene.shape.Polygon;
 
 import static javafx.scene.paint.Color.BLACK;
+import static javafx.scene.paint.Color.BLUE;
+import static javafx.scene.paint.Color.RED;
 
 public class HelloController {
+
+    @FXML
+    private Circle circ01;
 
     @FXML // ResourceBundle that was given to the FXMLLoader
     private ResourceBundle resources;
@@ -404,10 +410,16 @@ public class HelloController {
     void gteHexID(MouseEvent event) {
         Polygon hexagon = (Polygon) event.getSource();
         hexagon.setFill(BLACK);
+        if (circ01.getFill() == BLUE) {
+            circ01.setFill(RED);
+        } else {
+            circ01.setFill(BLUE);
+        }
     }
 
     @FXML // This method is called by the FXMLLoader when initialization is complete
     void initialize() {
+        assert circ01 != null : "fx:id=\"circ01\" was not injected: check your FXML file 'hello-view.fxml'.";
         assert hex1 != null : "fx:id=\"hex1\" was not injected: check your FXML file 'hello-view.fxml'.";
         assert hex10 != null : "fx:id=\"hex10\" was not injected: check your FXML file 'hello-view.fxml'.";
         assert hex100 != null : "fx:id=\"hex100\" was not injected: check your FXML file 'hello-view.fxml'.";
