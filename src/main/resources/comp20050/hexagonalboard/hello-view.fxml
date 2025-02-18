@@ -2,9 +2,11 @@
 
 <?import java.lang.Double?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
 <?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="comp20050.hexagonalboard.HelloController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="599.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="comp20050.hexagonalboard.HelloController">
 
    <children>
       <Polygon fx:id="hex11" fill="DODGERBLUE" layoutX="327.5" layoutY="62.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
@@ -2039,5 +2041,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
+      <Text layoutX="70.0" layoutY="554.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current Move" wrappingWidth="122.13672637939453" />
+      <Circle fx:id="circ01" fill="RED" layoutX="39.0" layoutY="550.0" onMouseClicked="#gteHexID" radius="25.0" stroke="#0900ff" strokeType="OUTSIDE" />
    </children>
 </AnchorPane>
