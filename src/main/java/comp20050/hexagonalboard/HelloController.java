@@ -409,7 +409,7 @@ public class HelloController {
     @FXML
     void gteHexID(MouseEvent event) {
         Polygon hexagon = (Polygon) event.getSource();
-        hexagon.setFill(BLACK);
+        hexagon.setFill(circ01.getFill());
         if (circ01.getFill() == BLUE) {
             circ01.setFill(RED);
         } else {
