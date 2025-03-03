@@ -6,11 +6,19 @@ import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.paint.Color;
+import javafx.scene.paint.Paint;
+import javafx.scene.shape.Circle;
 import javafx.scene.shape.Polygon;
 
 import static javafx.scene.paint.Color.BLACK;
+import static javafx.scene.paint.Color.BLUE;
+import static javafx.scene.paint.Color.RED;
 
 public class HelloController {
+
+    @FXML
+    private Circle circ01;
 
     @FXML // ResourceBundle that was given to the FXMLLoader
     private ResourceBundle resources;
@@ -403,11 +411,50 @@ public class HelloController {
     @FXML
     void gteHexID(MouseEvent event) {
         Polygon hexagon = (Polygon) event.getSource();
-        hexagon.setFill(BLACK);
+        String id = hexagon.getId().substring(3);
+        int coordinateFinder = Integer.parseInt(id);
+        int[] coordinates = findCoords(coordinateFinder);
+        System.out.println(coordinates[0] + " " + coordinates[1] + " " + coordinates[2]);
+        Paint current = circ01.getFill();
+        circ01.setFill(getTurn(current, hexagon.getId()));
+        hexagon.setFill(circ01.getFill());
+    }
+
+    Paint getTurn(Paint current, String hexagonID) {
+        if (!isCapturing(hexagonID)) {
+            if (current == RED) return BLUE;
+            else return RED;
+        }
+        else{
+            return current;
+        }
+    }
+
+    boolean isCapturing(String hexagonID){
+
+        return false;
+    }
+
+    int[] findCoords(int id){
+       int[][] coords = {{0,-6,6},{1,-6,5},{2,-6,4},{3,-6,3},{4,-6,2},{5,-6,1},{6,-6,0},
+        {-1,-5,6},{0,-5,5},{1,-5,4},{2,-5,3},{3,-5,2},{4,-5,1},{5,-5,0},{6,-5,-1},
+        {-2,-4,6},{-1,-4,5},{0,-4,4},{1,-4,3},{2,-4,2},{3,-4,1},{4,-4,0},{5,-4,-1},{6,-4,-2},
+        {-3,-3,6},{-2,-3,5},{-1,-3,4},{0,-3,3},{1,-3,2},{2,-3,1},{3,-3,0},{4,-3,-1},{5,-3,-2},{6,-3,3},
+        {-4,-2,6},{-3,-2,5},{-2,-2,4},{-1,-2,3},{0,-2,2},{1,-2,1},{2,-2,0},{3,-2,-1},{4,-2,-2},{5,-2,-3},{6,-2,-4},
+        {-5,-1,6},{-4,-1,5},{-3,-1,4},{-2,-1,3},{-1,-1,2},{0,-1,1},{1,-1,0},{2,-1,-1},{3,-1,-2},{4,-1,-3},{5,-1,-4},{6,-1,-5},
+        {-6,0,6},{-5,0,5},{-4,0,4},{-3,0,3},{-2,0,2},{-1,0,1},{0,0,0},{1,0,-1},{2,0,-2},{3,0,-3},{4,0,-4},{5,0,-5},{6,0,-6},
+        {-6,1,5},{-5,1,4},{-4,1,3},{-3,1,2},{-2,1,1},{-1,1,0},{0,1,-1},{1,1,-2},{2,1,-3},{3,1,-4},{4,1,-5},{5,1,-6},
+        {-6,2,4},{-5,2,3},{-4,2,2},{-3,2,1},{-2,2,0},{-1,2,-1},{0,2,-2},{1,2,-3},{2,2,-4},{3,2,-5},{4,2,-6},
+        {-6,3,3},{-5,3,2},{-4,3,1},{-3,3,0},{-2,3,-1},{-1,3,-2},{0,3,-3},{1,3,-4},{2,3,-5},{3,3,-6},
+        {-6,4,2},{-5,4,1},{-4,4,0},{-3,4,-1},{-2,4,-2},{-1,4,-3},{0,4,-4},{1,4,-5},{2,4,-6},
+        {-6,5,1},{-5,5,0},{-4,5,-1},{-3,5,-2},{-2,5,-3},{-1,5,-4},{0,5,-5},{1,5,-6},
+        {-6,6,0},{-5,6,-1},{-4,6,-2},{-3,6,-3},{-2,6,-4},{-1,6,-5},{0,6,-6}};
+    return coords[id-1];
     }
 
     @FXML // This method is called by the FXMLLoader when initialization is complete
     void initialize() {
+        assert circ01 != null : "fx:id=\"circ01\" was not injected: check your FXML file 'hello-view.fxml'.";
         assert hex1 != null : "fx:id=\"hex1\" was not injected: check your FXML file 'hello-view.fxml'.";
         assert hex10 != null : "fx:id=\"hex10\" was not injected: check your FXML file 'hello-view.fxml'.";
         assert hex100 != null : "fx:id=\"hex100\" was not injected: check your FXML file 'hello-view.fxml'.";
