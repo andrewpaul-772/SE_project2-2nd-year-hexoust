@@ -217,7 +217,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex124" fill="DODGERBLUE" layoutX="305.0" layoutY="475.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex123" fill="DODGERBLUE" layoutX="305.0" layoutY="475.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -233,7 +233,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex123" fill="DODGERBLUE" layoutX="260.0" layoutY="475.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex122" fill="DODGERBLUE" layoutX="260.0" layoutY="475.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -249,7 +249,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex122" fill="DODGERBLUE" layoutX="215.0" layoutY="475.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex121" fill="DODGERBLUE" layoutX="215.0" layoutY="475.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -265,7 +265,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex114" fill="DODGERBLUE" layoutX="192.5" layoutY="437.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex113" fill="DODGERBLUE" layoutX="192.5" layoutY="437.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -281,7 +281,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex105" fill="DODGERBLUE" layoutX="170.0" layoutY="400.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex104" fill="DODGERBLUE" layoutX="170.0" layoutY="400.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -297,7 +297,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex95" fill="DODGERBLUE" layoutX="147.5" layoutY="362.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex94" fill="DODGERBLUE" layoutX="147.5" layoutY="362.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -313,7 +313,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex84" fill="DODGERBLUE" layoutX="125.0" layoutY="325.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex83" fill="DODGERBLUE" layoutX="125.0" layoutY="325.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -329,7 +329,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex72" fill="DODGERBLUE" layoutX="102.5" layoutY="287.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex71" fill="DODGERBLUE" layoutX="102.5" layoutY="287.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -345,7 +345,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex59" fill="DODGERBLUE" layoutX="80.0" layoutY="250.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex58" fill="DODGERBLUE" layoutX="80.0" layoutY="250.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -425,7 +425,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex94" fill="DODGERBLUE" layoutX="575.0" layoutY="325.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex93" fill="DODGERBLUE" layoutX="575.0" layoutY="325.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -441,7 +441,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex104" fill="DODGERBLUE" layoutX="552.5" layoutY="362.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex103" fill="DODGERBLUE" layoutX="552.5" layoutY="362.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -457,7 +457,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex113" fill="DODGERBLUE" layoutX="530.0" layoutY="400.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex112" fill="DODGERBLUE" layoutX="530.0" layoutY="400.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -473,7 +473,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex121" fill="DODGERBLUE" layoutX="507.5" layoutY="437.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex120" fill="DODGERBLUE" layoutX="507.5" layoutY="437.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -489,7 +489,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex128" fill="DODGERBLUE" layoutX="485.0" layoutY="475.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex127" fill="DODGERBLUE" layoutX="485.0" layoutY="475.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -505,7 +505,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex127" fill="DODGERBLUE" layoutX="440.0" layoutY="475.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex126" fill="DODGERBLUE" layoutX="440.0" layoutY="475.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -521,7 +521,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex126" fill="DODGERBLUE" layoutX="395.0" layoutY="475.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex125" fill="DODGERBLUE" layoutX="395.0" layoutY="475.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -537,7 +537,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex125" fill="DODGERBLUE" layoutX="350.0" layoutY="475.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex124" fill="DODGERBLUE" layoutX="350.0" layoutY="475.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -553,7 +553,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex83" fill="DODGERBLUE" layoutX="597.5" layoutY="287.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex82" fill="DODGERBLUE" layoutX="597.5" layoutY="287.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -569,7 +569,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex71" fill="DODGERBLUE" layoutX="620.0" layoutY="250.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex70" fill="DODGERBLUE" layoutX="620.0" layoutY="250.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -585,7 +585,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex58" fill="DODGERBLUE" layoutX="597.5" layoutY="212.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex57" fill="DODGERBLUE" layoutX="597.5" layoutY="212.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -745,7 +745,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex52" fill="DODGERBLUE" layoutX="327.5" layoutY="212.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex51" fill="DODGERBLUE" layoutX="327.5" layoutY="212.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -761,7 +761,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex66" fill="DODGERBLUE" layoutX="395.0" layoutY="250.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex65" fill="DODGERBLUE" layoutX="395.0" layoutY="250.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -777,7 +777,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex65" fill="DODGERBLUE" layoutX="350.0" layoutY="250.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex64" fill="DODGERBLUE" layoutX="350.0" layoutY="250.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -793,7 +793,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex64" fill="DODGERBLUE" layoutX="305.0" layoutY="250.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex63" fill="DODGERBLUE" layoutX="305.0" layoutY="250.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -809,7 +809,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex53" fill="DODGERBLUE" layoutX="372.5" layoutY="212.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex52" fill="DODGERBLUE" layoutX="372.5" layoutY="212.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -825,7 +825,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex77" fill="DODGERBLUE" layoutX="327.5" layoutY="287.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex76" fill="DODGERBLUE" layoutX="327.5" layoutY="287.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -841,7 +841,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex90" fill="DODGERBLUE" layoutX="395.0" layoutY="325.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex89" fill="DODGERBLUE" layoutX="395.0" layoutY="325.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -857,7 +857,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex89" fill="DODGERBLUE" layoutX="350.0" layoutY="325.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex88" fill="DODGERBLUE" layoutX="350.0" layoutY="325.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -873,7 +873,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex88" fill="DODGERBLUE" layoutX="305.0" layoutY="325.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex87" fill="DODGERBLUE" layoutX="305.0" layoutY="325.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -889,7 +889,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex78" fill="DODGERBLUE" layoutX="372.5" layoutY="287.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex77" fill="DODGERBLUE" layoutX="372.5" layoutY="287.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -905,7 +905,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex99" fill="DODGERBLUE" layoutX="327.5" layoutY="362.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex98" fill="DODGERBLUE" layoutX="327.5" layoutY="362.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -921,7 +921,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex110" fill="DODGERBLUE" layoutX="395.0" layoutY="400.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex109" fill="DODGERBLUE" layoutX="395.0" layoutY="400.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -937,7 +937,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex109" fill="DODGERBLUE" layoutX="350.0" layoutY="400.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex108" fill="DODGERBLUE" layoutX="350.0" layoutY="400.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -953,7 +953,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex108" fill="DODGERBLUE" layoutX="305.0" layoutY="400.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex107" fill="DODGERBLUE" layoutX="305.0" layoutY="400.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -969,7 +969,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex100" fill="DODGERBLUE" layoutX="372.5" layoutY="362.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex99" fill="DODGERBLUE" layoutX="372.5" layoutY="362.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -985,7 +985,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex118" fill="DODGERBLUE" layoutX="372.5" layoutY="437.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex117" fill="DODGERBLUE" layoutX="372.5" layoutY="437.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -1001,7 +1001,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex117" fill="DODGERBLUE" layoutX="327.5" layoutY="437.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex116" fill="DODGERBLUE" layoutX="327.5" layoutY="437.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -1017,7 +1017,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex116" fill="DODGERBLUE" layoutX="282.5" layoutY="437.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex115" fill="DODGERBLUE" layoutX="282.5" layoutY="437.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -1033,7 +1033,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex81" fill="DODGERBLUE" layoutX="507.5" layoutY="287.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex80" fill="DODGERBLUE" layoutX="507.5" layoutY="287.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -1049,7 +1049,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex80" fill="DODGERBLUE" layoutX="462.5" layoutY="287.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex79" fill="DODGERBLUE" layoutX="462.5" layoutY="287.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -1065,7 +1065,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex79" fill="DODGERBLUE" layoutX="417.5" layoutY="287.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex78" fill="DODGERBLUE" layoutX="417.5" layoutY="287.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -1081,7 +1081,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex76" fill="DODGERBLUE" layoutX="282.5" layoutY="287.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex75" fill="DODGERBLUE" layoutX="282.5" layoutY="287.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -1097,7 +1097,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex75" fill="DODGERBLUE" layoutX="237.5" layoutY="287.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex74" fill="DODGERBLUE" layoutX="237.5" layoutY="287.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -1113,7 +1113,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex74" fill="DODGERBLUE" layoutX="192.5" layoutY="287.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex73" fill="DODGERBLUE" layoutX="192.5" layoutY="287.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -1129,7 +1129,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex63" fill="DODGERBLUE" layoutX="260.0" layoutY="250.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex62" fill="DODGERBLUE" layoutX="260.0" layoutY="250.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -1145,7 +1145,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex62" fill="DODGERBLUE" layoutX="215.0" layoutY="250.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex61" fill="DODGERBLUE" layoutX="215.0" layoutY="250.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -1161,7 +1161,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex61" fill="DODGERBLUE" layoutX="170.0" layoutY="250.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex60" fill="DODGERBLUE" layoutX="170.0" layoutY="250.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -1177,7 +1177,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex87" fill="DODGERBLUE" layoutX="260.0" layoutY="325.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex86" fill="DODGERBLUE" layoutX="260.0" layoutY="325.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -1193,7 +1193,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex86" fill="DODGERBLUE" layoutX="215.0" layoutY="325.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex85" fill="DODGERBLUE" layoutX="215.0" layoutY="325.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -1209,7 +1209,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex85" fill="DODGERBLUE" layoutX="170.0" layoutY="325.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex84" fill="DODGERBLUE" layoutX="170.0" layoutY="325.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -1225,7 +1225,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex98" fill="DODGERBLUE" layoutX="282.5" layoutY="362.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex97" fill="DODGERBLUE" layoutX="282.5" layoutY="362.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -1241,7 +1241,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex97" fill="DODGERBLUE" layoutX="237.5" layoutY="362.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex96" fill="DODGERBLUE" layoutX="237.5" layoutY="362.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -1257,7 +1257,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex96" fill="DODGERBLUE" layoutX="192.5" layoutY="362.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex95" fill="DODGERBLUE" layoutX="192.5" layoutY="362.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -1273,7 +1273,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex69" fill="DODGERBLUE" layoutX="530.0" layoutY="250.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex68" fill="DODGERBLUE" layoutX="530.0" layoutY="250.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -1289,7 +1289,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex68" fill="DODGERBLUE" layoutX="485.0" layoutY="250.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex67" fill="DODGERBLUE" layoutX="485.0" layoutY="250.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -1305,7 +1305,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex67" fill="DODGERBLUE" layoutX="440.0" layoutY="250.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex66" fill="DODGERBLUE" layoutX="440.0" layoutY="250.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -1369,7 +1369,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex93" fill="DODGERBLUE" layoutX="530.0" layoutY="325.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex92" fill="DODGERBLUE" layoutX="530.0" layoutY="325.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -1385,7 +1385,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex92" fill="DODGERBLUE" layoutX="485.0" layoutY="325.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex91" fill="DODGERBLUE" layoutX="485.0" layoutY="325.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -1401,7 +1401,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex91" fill="DODGERBLUE" layoutX="440.0" layoutY="325.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex90" fill="DODGERBLUE" layoutX="440.0" layoutY="325.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -1417,7 +1417,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex103" fill="DODGERBLUE" layoutX="507.5" layoutY="362.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex102" fill="DODGERBLUE" layoutX="507.5" layoutY="362.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -1433,7 +1433,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex102" fill="DODGERBLUE" layoutX="462.5" layoutY="362.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex101" fill="DODGERBLUE" layoutX="462.5" layoutY="362.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -1449,7 +1449,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex101" fill="DODGERBLUE" layoutX="417.5" layoutY="362.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex100" fill="DODGERBLUE" layoutX="417.5" layoutY="362.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -1465,7 +1465,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex56" fill="DODGERBLUE" layoutX="507.5" layoutY="212.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex55" fill="DODGERBLUE" layoutX="507.5" layoutY="212.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -1481,7 +1481,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex55" fill="DODGERBLUE" layoutX="462.5" layoutY="212.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex54" fill="DODGERBLUE" layoutX="462.5" layoutY="212.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -1497,7 +1497,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex54" fill="DODGERBLUE" layoutX="417.5" layoutY="212.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex53" fill="DODGERBLUE" layoutX="417.5" layoutY="212.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -1833,7 +1833,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex112" fill="DODGERBLUE" layoutX="485.0" layoutY="400.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex111" fill="DODGERBLUE" layoutX="485.0" layoutY="400.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -1849,7 +1849,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex111" fill="DODGERBLUE" layoutX="440.0" layoutY="400.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex110" fill="DODGERBLUE" layoutX="440.0" layoutY="400.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -1865,7 +1865,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex120" fill="DODGERBLUE" layoutX="462.5" layoutY="437.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex119" fill="DODGERBLUE" layoutX="462.5" layoutY="437.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -1881,7 +1881,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex119" fill="DODGERBLUE" layoutX="417.5" layoutY="437.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex118" fill="DODGERBLUE" layoutX="417.5" layoutY="437.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -1897,7 +1897,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex107" fill="DODGERBLUE" layoutX="260.0" layoutY="400.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex106" fill="DODGERBLUE" layoutX="260.0" layoutY="400.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -1913,7 +1913,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex115" fill="DODGERBLUE" layoutX="237.5" layoutY="437.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex114" fill="DODGERBLUE" layoutX="237.5" layoutY="437.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -1929,7 +1929,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex106" fill="DODGERBLUE" layoutX="215.0" layoutY="400.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex105" fill="DODGERBLUE" layoutX="215.0" layoutY="400.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -1945,7 +1945,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex73" fill="DODGERBLUE" layoutX="147.5" layoutY="287.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex72" fill="DODGERBLUE" layoutX="147.5" layoutY="287.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -1961,7 +1961,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex60" fill="DODGERBLUE" layoutX="125.0" layoutY="250.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex59" fill="DODGERBLUE" layoutX="125.0" layoutY="250.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -1993,7 +1993,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex82" fill="DODGERBLUE" layoutX="552.5" layoutY="287.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex81" fill="DODGERBLUE" layoutX="552.5" layoutY="287.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -2009,7 +2009,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex70" fill="DODGERBLUE" layoutX="575.0" layoutY="250.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex69" fill="DODGERBLUE" layoutX="575.0" layoutY="250.0" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
@@ -2025,7 +2025,7 @@
             <Double fx:value="-12.5" />
          </points>
       </Polygon>
-      <Polygon fx:id="hex57" fill="DODGERBLUE" layoutX="552.5" layoutY="212.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
+      <Polygon fx:id="hex56" fill="DODGERBLUE" layoutX="552.5" layoutY="212.5" onMouseClicked="#gteHexID" stroke="BLACK" strokeType="INSIDE">
          <points>
             <Double fx:value="0.0" />
             <Double fx:value="-25.0" />
