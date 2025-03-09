@@ -476,7 +476,6 @@ public class HelloController {
         for (int[] coordinate : coords) {
             for (int[] js : toCheck) {
                 if (coordinate[0] == js[0] && coordinate[2] == js[2]) {
-                    System.out.println(coordinate[0] + "," + coordinate[1] + "," + coordinate[2]);
                     if (hexList.get(i).getFill() == BLUE || hexList.get(i).getFill() == RED) {
                         return false;
                     }
