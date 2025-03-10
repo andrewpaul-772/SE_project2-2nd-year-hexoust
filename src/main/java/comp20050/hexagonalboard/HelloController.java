@@ -1,11 +1,11 @@
-package comp20050.hexagonalboard; /**
- * Sample Skeleton for 'hello-view.fxml' Controller Class
- */
+package comp20050.hexagonalboard;
 
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
 import javafx.scene.paint.Paint;
@@ -18,7 +18,7 @@ import static javafx.scene.paint.Color.RED;
 
 public class HelloController {
     ArrayList<Polygon> hexList = new ArrayList<>();
-    
+
     @FXML
     private ResourceBundle resources;
 
@@ -408,25 +408,28 @@ public class HelloController {
 
     @FXML
     private Polygon hex99;
-    
-    
+
+    @FXML
+    private Label invalidMoveText;
+
+
 
     private static int[][] coords = {{0,-6,6},{1,-6,5},{2,-6,4},{3,-6,3},{4,-6,2},{5,-6,1},{6,-6,0},{-1,-5,6},{0,-5,5},{1,-5,4},
-        {2,-5,3},{3,-5,2},{4,-5,1},{5,-5,0},{6,-5,-1},{-2,-4,6},{-1,-4,5},{0,-4,4},{1,-4,3},{2,-4,2},
-        {3,-4,1},{4,-4,0},{5,-4,-1},{6,-4,-2},{-3,-3,6},{-2,-3,5},{-1,-3,4},{0,-3,3},{1,-3,2},{2,-3,1},
-        {3,-3,0},{4,-3,-1},{5,-3,-2},{6,-3,-3},{-4,-2,6},{-3,-2,5},{-2,-2,4},{-1,-2,3},{0,-2,2},{1,-2,1},
-        {2,-2,0},{3,-2,-1},{4,-2,-2},{5,-2,-3},{6,-2,-4},{-5,-1,6},{-4,-1,5},{-3,-1,4},{-2,-1,3},{-1,-1,2},
-        {0,-1,1},{1,-1,0},{2,-1,-1},{3,-1,-2},{4,-1,-3},{5,-1,-4},{6,-1,-5},{-6,0,6},{-5,0,5},{-4,0,4},
-        {-3,0,3},{-2,0,2},{-1,0,1},{0,0,0},{1,0,-1},{2,0,-2},{3,0,-3},{4,0,-4},{5,0,-5},{6,0,-6},
-        {-6,1,5},{-5,1,4},{-4,1,3},{-3,1,2},{-2,1,1},{-1,1,0},{0,1,-1},{1,1,-2},{2,1,-3},{3,1,-4},
-        {4,1,-5},{5,1,-6},{-6,2,4},{-5,2,3},{-4,2,2},{-3,2,1},{-2,2,0},{-1,2,-1},{0,2,-2},{1,2,-3},
-        {2,2,-4},{3,2,-5},{4,2,-6},{-6,3,3},{-5,3,2},{-4,3,1},{-3,3,0},{-2,3,-1},{-1,3,-2},{0,3,-3},
-        {1,3,-4},{2,3,-5},{3,3,-6},{-6,4,2},{-5,4,1},{-4,4,0},{-3,4,-1},{-2,4,-2},{-1,4,-3},{0,4,-4},
-        {1,4,-5},{2,4,-6},{-6,5,1},{-5,5,0},{-4,5,-1},{-3,5,-2},{-2,5,-3},{-1,5,-4},{0,5,-5},{1,5,-6},
-        {-6,6,0},{-5,6,-1},{-4,6,-2},{-3,6,-3},{-2,6,-4},{-1,6,-5},{0,6,-6}};
-    
+            {2,-5,3},{3,-5,2},{4,-5,1},{5,-5,0},{6,-5,-1},{-2,-4,6},{-1,-4,5},{0,-4,4},{1,-4,3},{2,-4,2},
+            {3,-4,1},{4,-4,0},{5,-4,-1},{6,-4,-2},{-3,-3,6},{-2,-3,5},{-1,-3,4},{0,-3,3},{1,-3,2},{2,-3,1},
+            {3,-3,0},{4,-3,-1},{5,-3,-2},{6,-3,-3},{-4,-2,6},{-3,-2,5},{-2,-2,4},{-1,-2,3},{0,-2,2},{1,-2,1},
+            {2,-2,0},{3,-2,-1},{4,-2,-2},{5,-2,-3},{6,-2,-4},{-5,-1,6},{-4,-1,5},{-3,-1,4},{-2,-1,3},{-1,-1,2},
+            {0,-1,1},{1,-1,0},{2,-1,-1},{3,-1,-2},{4,-1,-3},{5,-1,-4},{6,-1,-5},{-6,0,6},{-5,0,5},{-4,0,4},
+            {-3,0,3},{-2,0,2},{-1,0,1},{0,0,0},{1,0,-1},{2,0,-2},{3,0,-3},{4,0,-4},{5,0,-5},{6,0,-6},
+            {-6,1,5},{-5,1,4},{-4,1,3},{-3,1,2},{-2,1,1},{-1,1,0},{0,1,-1},{1,1,-2},{2,1,-3},{3,1,-4},
+            {4,1,-5},{5,1,-6},{-6,2,4},{-5,2,3},{-4,2,2},{-3,2,1},{-2,2,0},{-1,2,-1},{0,2,-2},{1,2,-3},
+            {2,2,-4},{3,2,-5},{4,2,-6},{-6,3,3},{-5,3,2},{-4,3,1},{-3,3,0},{-2,3,-1},{-1,3,-2},{0,3,-3},
+            {1,3,-4},{2,3,-5},{3,3,-6},{-6,4,2},{-5,4,1},{-4,4,0},{-3,4,-1},{-2,4,-2},{-1,4,-3},{0,4,-4},
+            {1,4,-5},{2,4,-6},{-6,5,1},{-5,5,0},{-4,5,-1},{-3,5,-2},{-2,5,-3},{-1,5,-4},{0,5,-5},{1,5,-6},
+            {-6,6,0},{-5,6,-1},{-4,6,-2},{-3,6,-3},{-2,6,-4},{-1,6,-5},{0,6,-6}};
+
     @FXML
-    void gteHexID(MouseEvent event) {
+    void getHexID(MouseEvent event) {
         Polygon hexagon = (Polygon) event.getSource();
         //System.out.println(hexagon.getId());
         String id = hexagon.getId().substring(3);
@@ -436,31 +439,33 @@ public class HelloController {
             Paint current = circ01.getFill();
             circ01.setFill(getTurn(current, hexagon.getId()));
             hexagon.setFill(circ01.getFill());
+            invalidMoveText.setText("");
         } else{
             System.out.println("invalid move");
+            invalidMoveText.setText("invalid move");
         }
-        
-        
+
+
     }
 
     Paint getTurn(Paint current, String hexagonID) {
-    if (!isCapturing(hexagonID)) {
-        if (current == RED) return BLUE;
-        else return RED;
-    }else{
-        return current;
-    }
-        
+        if (!isCapturing(hexagonID)) {
+            if (current == RED) return BLUE;
+            else return RED;
+        }else{
+            return current;
+        }
+
     }
 
     boolean isCapturing(String hexagonID){
-        
-        
+
+
         return false;
     }
 
     int[] findCoords(int id){
-    return coords[id-1];
+        return coords[id-1];
     }
 
     Boolean isValid(){
@@ -472,7 +477,7 @@ public class HelloController {
         int i = 0;
 
         int[][] toCheck = {{c[0] + 1, c[1], c[2]},{c[0] - 1, c[1], c[2]},{c[0], c[1], c[2] + 1},{c[0], c[1], c[2] - 1},
-        {c[0] + 1, c[1], c[2] - 1},{c[0] - 1, c[1], c[2] + 1}, c}; //to the right
+                {c[0] + 1, c[1], c[2] - 1},{c[0] - 1, c[1], c[2] + 1}, c}; //to the right
         for (int[] coordinate : coords) {
             for (int[] js : toCheck) {
                 if (coordinate[0] == js[0] && coordinate[2] == js[2]) {
