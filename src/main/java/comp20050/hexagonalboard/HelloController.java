@@ -2,6 +2,7 @@ package comp20050.hexagonalboard;
 
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
@@ -428,18 +429,26 @@ public class HelloController {
             {1,4,-5},{2,4,-6},{-6,5,1},{-5,5,0},{-4,5,-1},{-3,5,-2},{-2,5,-3},{-1,5,-4},{0,5,-5},{1,5,-6},
             {-6,6,0},{-5,6,-1},{-4,6,-2},{-3,6,-3},{-2,6,-4},{-1,6,-5},{0,6,-6}};
 
+    ArrayList<Integer[]> reds = new ArrayList<>();
+    ArrayList<Integer[]> blues = new ArrayList<>();
+
     @FXML
-    void getHexID(MouseEvent event) {
+    void gteHexID(MouseEvent event) {
         Polygon hexagon = (Polygon) event.getSource();
-        //System.out.println(hexagon.getId());
         String id = hexagon.getId().substring(3);
         int coordinateFinder = Integer.parseInt(id);
         int[] coordinates = findCoords(coordinateFinder);
-        if (isNCM(coordinates)) {
+        if (isNCM(coordinates, circ01.getFill())) {
             Paint current = circ01.getFill();
-            circ01.setFill(getTurn(current, hexagon.getId()));
             hexagon.setFill(circ01.getFill());
+            circ01.setFill(getTurn(current, hexagon.getId()));
             invalidMoveText.setText("");
+            if (hexagon.getFill() == BLUE){
+                blues.add(new Integer[]{coordinates[0], coordinates[1], coordinates[2]});
+            }
+            if (hexagon.getFill() == RED){
+                reds.add(new Integer[]{coordinates[0], coordinates[1], coordinates[2]});
+            }
         } else{
             System.out.println("invalid move");
             invalidMoveText.setText("invalid move");
@@ -473,23 +482,39 @@ public class HelloController {
         return false;
     }
 
-    Boolean isNCM(int[] c){
-        int i = 0;
+    Boolean isNCM(int[] c, Paint colour){
+        int[][] directions = {
+                {1, -1, 0},    // Right
+                {-1, 1, 0},     // Left
+                {0, 1, -1},     // Down-left
+                {0, -1, 1},     // Up-right
+                {1, 0, -1},     // Down-right
+                {-1, 0, 1}      // Up-left
+        };
 
-        int[][] toCheck = {{c[0] + 1, c[1], c[2]},{c[0] - 1, c[1], c[2]},{c[0], c[1], c[2] + 1},{c[0], c[1], c[2] - 1},
-                {c[0] + 1, c[1], c[2] - 1},{c[0] - 1, c[1], c[2] + 1}, c}; //to the right
-        for (int[] coordinate : coords) {
-            for (int[] js : toCheck) {
-                if (coordinate[0] == js[0] && coordinate[2] == js[2]) {
-                    if (hexList.get(i).getFill() == BLUE || hexList.get(i).getFill() == RED) {
-                        return false;
+        for (int[] dir : directions) {
+            Integer[] neighbor = {c[0] + dir[0], c[1] + dir[1], c[2] + dir[2]};
+
+            // Check against reds
+            if (colour == BLUE) {
+                for (Integer[] redCoord : reds) {
+                    if (Arrays.equals(neighbor, redCoord)) {
+                        return false; // Adjacent red found for blue move
                     }
                 }
             }
-            i++;
+            // Check against blues
+            else if (colour == RED) {
+                for (Integer[] blueCoord : blues) {
+                    if (Arrays.equals(neighbor, blueCoord)) {
+                        return false; // Adjacent blue found for red move
+                    }
+                }
+            }
         }
         return true;
     }
+
 
     @FXML
     void initialize() {
