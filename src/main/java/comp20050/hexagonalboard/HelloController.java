@@ -15,10 +15,10 @@ import javafx.scene.shape.Polygon;
 
 import static javafx.scene.paint.Color.BLACK;
 import static javafx.scene.paint.Color.BLUE;
+import static javafx.scene.paint.Color.DODGERBLUE;
 import static javafx.scene.paint.Color.RED;
 
 public class HelloController {
-    ArrayList<Polygon> hexList = new ArrayList<>();
 
     @FXML
     private ResourceBundle resources;
@@ -429,8 +429,20 @@ public class HelloController {
             {1,4,-5},{2,4,-6},{-6,5,1},{-5,5,0},{-4,5,-1},{-3,5,-2},{-2,5,-3},{-1,5,-4},{0,5,-5},{1,5,-6},
             {-6,6,0},{-5,6,-1},{-4,6,-2},{-3,6,-3},{-2,6,-4},{-1,6,-5},{0,6,-6}};
 
-    ArrayList<Integer[]> reds = new ArrayList<>();
-    ArrayList<Integer[]> blues = new ArrayList<>();
+    int[][] directions = {
+        {1, -1, 0},    // Right
+        {-1, 1, 0},     // Left
+        {0, 1, -1},     // Down-left
+        {0, -1, 1},     // Up-right
+        {1, 0, -1},     // Down-right
+        {-1, 0, 1}      // Up-left
+        };
+
+    ArrayList<int[]> currentAllies = new ArrayList<>();
+    ArrayList<int[]> currentEnemies = new ArrayList<>();
+    ArrayList<Polygon> hexList = new ArrayList<>();
+    int tempSize, maxEnemy;
+    int victoryState = 0;
 
     @FXML
     void gteHexID(MouseEvent event) {
@@ -438,19 +450,24 @@ public class HelloController {
         String id = hexagon.getId().substring(3);
         int coordinateFinder = Integer.parseInt(id);
         int[] coordinates = findCoords(coordinateFinder);
-        if (isNCM(coordinates, circ01.getFill())) {
+        
+        if (victoryState != 0) {
+            
+        }else if (hexList.get(coordinateFinder-1).getFill() != DODGERBLUE) {
+            invalidMoveText.setText("invalid move");
+        } else if (isNCM(coordinates, circ01.getFill())) {
             Paint current = circ01.getFill();
             hexagon.setFill(circ01.getFill());
             circ01.setFill(getTurn(current, hexagon.getId()));
             invalidMoveText.setText("");
-            if (hexagon.getFill() == BLUE){
-                blues.add(new Integer[]{coordinates[0], coordinates[1], coordinates[2]});
+        } else if (isCM(coordinates, circ01.getFill())) {
+            for (int[] c : currentEnemies) {
+                hexList.get(findId(c)).setFill(DODGERBLUE);
             }
-            if (hexagon.getFill() == RED){
-                reds.add(new Integer[]{coordinates[0], coordinates[1], coordinates[2]});
-            }
-        } else{
-            System.out.println("invalid move");
+            hexagon.setFill(circ01.getFill());
+            isWin();
+            
+        }else{
             invalidMoveText.setText("invalid move");
         }
 
@@ -458,62 +475,131 @@ public class HelloController {
     }
 
     Paint getTurn(Paint current, String hexagonID) {
-        if (!isCapturing(hexagonID)) {
-            if (current == RED) return BLUE;
-            else return RED;
-        }else{
-            return current;
-        }
-
-    }
-
-    boolean isCapturing(String hexagonID){
-
-
-        return false;
+            if (current == RED) {
+                return BLUE;
+            }
+            return RED;
     }
 
     int[] findCoords(int id){
         return coords[id-1];
     }
 
-    Boolean isValid(){
-
-        return false;
+    int findId(int[] coord){
+        for (int i = 0; i < coords.length; i++) {
+            if (Arrays.equals(coord, coords[i])) {
+                return i;
+            }
+        }
+        return 0;
     }
 
     Boolean isNCM(int[] c, Paint colour){
-        int[][] directions = {
-                {1, -1, 0},    // Right
-                {-1, 1, 0},     // Left
-                {0, 1, -1},     // Down-left
-                {0, -1, 1},     // Up-right
-                {1, 0, -1},     // Down-right
-                {-1, 0, 1}      // Up-left
-        };
+        
 
         for (int[] dir : directions) {
-            Integer[] neighbor = {c[0] + dir[0], c[1] + dir[1], c[2] + dir[2]};
+            int[] neighbor = {c[0] + dir[0], c[1] + dir[1], c[2] + dir[2]};
 
             // Check against reds
-            if (colour == BLUE) {
-                for (Integer[] redCoord : reds) {
-                    if (Arrays.equals(neighbor, redCoord)) {
-                        return false; // Adjacent red found for blue move
-                    }
-                }
+            if (colour == RED) {
+               if(hexList.get(findId(neighbor)).getFill() == RED){
+                return false;
+               } 
             }
             // Check against blues
-            else if (colour == RED) {
-                for (Integer[] blueCoord : blues) {
-                    if (Arrays.equals(neighbor, blueCoord)) {
-                        return false; // Adjacent blue found for red move
-                    }
-                }
+            else if (colour == BLUE) {
+                if(hexList.get(findId(neighbor)).getFill() == BLUE){
+                    return false;
+                   }
             }
         }
         return true;
     }
+
+    Boolean isCM(int[] c, Paint colour){
+        currentAllies.clear();
+        currentEnemies.clear();
+        maxEnemy = 0;
+
+        scan(c, colour);
+        if ((currentAllies.size() + 1) > maxEnemy && maxEnemy != 0) {
+            return true;
+        }
+        return false;
+    }
+
+    void scan(int[] c, Paint colour){
+        for (int[] dir : directions) {
+            int[] neighbor = {c[0] + dir[0], c[1] + dir[1], c[2] + dir[2]};
+            
+            if(hexList.get(findId(neighbor)).getFill() == colour){
+                friendSize(neighbor, colour);
+            } else if(hexList.get(findId(neighbor)).getFill() != colour && hexList.get(findId(neighbor)).getFill() != DODGERBLUE){
+                    enemySize(neighbor, colour);
+                    tempSize = 0;
+            }
+        }
+    }
+
+    void friendSize(int[] c, Paint colour){
+        for (int[] i : currentAllies) {
+            if (Arrays.equals(c, i)) {
+                return;
+            }
+        }
+        currentAllies.add(c);
+        scan(c, colour);
+
+        return;
+    }
+
+    void enemySize(int[] c, Paint colour){
+        for (int[] i : currentEnemies) {
+            if (Arrays.equals(c, i)) {
+                return;
+            }
+        }
+        currentEnemies.add(c);
+        tempSize += 1;
+        for (int[] dir : directions) {
+            int[] neighbor = {c[0] + dir[0], c[1] + dir[1], c[2] + dir[2]};
+
+            if(hexList.get(findId(neighbor)).getFill() != colour && hexList.get(findId(neighbor)).getFill() != DODGERBLUE){
+                enemySize(neighbor, colour);
+            }
+        }
+        if (tempSize > maxEnemy) {
+            maxEnemy = tempSize;
+        }
+        
+        return;
+    }
+
+    void isWin(){
+        int reds = 0;
+        int blues = 0;
+        for (Polygon a : hexList) {
+            if (a.getFill() == BLUE) {
+                blues += 1;
+            } else if (a.getFill() == RED) {
+                reds += 1;
+            }
+        }
+
+        if (reds == 0) {
+            victoryState = 1;
+            invalidMoveText.setText("Blue Wins");
+            return;
+        } else if(blues == 0){
+            victoryState = 1;
+            invalidMoveText.setText("Red Wins");
+            return;
+        }
+        invalidMoveText.setText("");
+        return;
+    }
+
+    
 
 
     @FXML
