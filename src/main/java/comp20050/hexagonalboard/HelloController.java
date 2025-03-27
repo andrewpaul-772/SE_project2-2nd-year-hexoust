@@ -430,13 +430,13 @@ public class HelloController {
             {-6,6,0},{-5,6,-1},{-4,6,-2},{-3,6,-3},{-2,6,-4},{-1,6,-5},{0,6,-6}};
 
     int[][] directions = {
-        {1, -1, 0},    // Right
-        {-1, 1, 0},     // Left
-        {0, 1, -1},     // Down-left
-        {0, -1, 1},     // Up-right
-        {1, 0, -1},     // Down-right
-        {-1, 0, 1}      // Up-left
-        };
+            {1, -1, 0},    // Right
+            {-1, 1, 0},     // Left
+            {0, 1, -1},     // Down-left
+            {0, -1, 1},     // Up-right
+            {1, 0, -1},     // Down-right
+            {-1, 0, 1}      // Up-left
+    };
 
     ArrayList<int[]> currentAllies = new ArrayList<>();
     ArrayList<int[]> currentEnemies = new ArrayList<>();
@@ -445,14 +445,17 @@ public class HelloController {
     int victoryState = 0;
 
     @FXML
-    void gteHexID(MouseEvent event) {
+    void gteHexID(MouseEvent event) throws InterruptedException {
         Polygon hexagon = (Polygon) event.getSource();
         String id = hexagon.getId().substring(3);
         int coordinateFinder = Integer.parseInt(id);
         int[] coordinates = findCoords(coordinateFinder);
-        
+
         if (victoryState != 0) {
-            
+            for (Polygon hex : hexList){
+                hex.setFill(DODGERBLUE);
+            }
+            victoryState = 0;
         }else if (hexList.get(coordinateFinder-1).getFill() != DODGERBLUE) {
             invalidMoveText.setText("invalid move");
         } else if (isNCM(coordinates, circ01.getFill())) {
@@ -466,19 +469,17 @@ public class HelloController {
             }
             hexagon.setFill(circ01.getFill());
             isWin();
-            
+
         }else{
             invalidMoveText.setText("invalid move");
         }
-
-
     }
 
     Paint getTurn(Paint current, String hexagonID) {
-            if (current == RED) {
-                return BLUE;
-            }
-            return RED;
+        if (current == RED) {
+            return BLUE;
+        }
+        return RED;
     }
 
     int[] findCoords(int id){
@@ -495,22 +496,22 @@ public class HelloController {
     }
 
     Boolean isNCM(int[] c, Paint colour){
-        
+
 
         for (int[] dir : directions) {
             int[] neighbor = {c[0] + dir[0], c[1] + dir[1], c[2] + dir[2]};
 
             // Check against reds
             if (colour == RED) {
-               if(hexList.get(findId(neighbor)).getFill() == RED){
-                return false;
-               } 
+                if(hexList.get(findId(neighbor)).getFill() == RED){
+                    return false;
+                }
             }
             // Check against blues
             else if (colour == BLUE) {
                 if(hexList.get(findId(neighbor)).getFill() == BLUE){
                     return false;
-                   }
+                }
             }
         }
         return true;
@@ -531,12 +532,12 @@ public class HelloController {
     void scan(int[] c, Paint colour){
         for (int[] dir : directions) {
             int[] neighbor = {c[0] + dir[0], c[1] + dir[1], c[2] + dir[2]};
-            
+
             if(hexList.get(findId(neighbor)).getFill() == colour){
                 friendSize(neighbor, colour);
             } else if(hexList.get(findId(neighbor)).getFill() != colour && hexList.get(findId(neighbor)).getFill() != DODGERBLUE){
-                    enemySize(neighbor, colour);
-                    tempSize = 0;
+                enemySize(neighbor, colour);
+                tempSize = 0;
             }
         }
     }
@@ -571,7 +572,7 @@ public class HelloController {
         if (tempSize > maxEnemy) {
             maxEnemy = tempSize;
         }
-        
+
         return;
     }
 
@@ -588,18 +589,18 @@ public class HelloController {
 
         if (reds == 0) {
             victoryState = 1;
-            invalidMoveText.setText("Blue Wins");
+            invalidMoveText.setText("Blue Wins (click for next game)");
             return;
         } else if(blues == 0){
             victoryState = 1;
-            invalidMoveText.setText("Red Wins");
+            invalidMoveText.setText("Red Wins (click for next game)");
             return;
         }
         invalidMoveText.setText("");
         return;
     }
 
-    
+
 
 
     @FXML
