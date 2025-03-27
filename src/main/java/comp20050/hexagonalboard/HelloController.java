@@ -443,6 +443,7 @@ public class HelloController {
     ArrayList<Polygon> hexList = new ArrayList<>();
     int tempSize, maxEnemy;
     int victoryState = 0;
+    int inBounds = 0;
 
     @FXML
     void gteHexID(MouseEvent event) throws InterruptedException {
@@ -450,7 +451,6 @@ public class HelloController {
         String id = hexagon.getId().substring(3);
         int coordinateFinder = Integer.parseInt(id);
         int[] coordinates = findCoords(coordinateFinder);
-
         if (victoryState != 0) {
             for (Polygon hex : hexList){
                 hex.setFill(DODGERBLUE);
@@ -500,7 +500,9 @@ public class HelloController {
 
         for (int[] dir : directions) {
             int[] neighbor = {c[0] + dir[0], c[1] + dir[1], c[2] + dir[2]};
-
+            if (neighbor[0] > 6 || neighbor[0] < -6 || neighbor[1] > 6 || neighbor[1] < -6 || neighbor[2] > 6 || neighbor[2] < -6) {
+                continue;
+            }
             // Check against reds
             if (colour == RED) {
                 if(hexList.get(findId(neighbor)).getFill() == RED){
@@ -532,8 +534,15 @@ public class HelloController {
     void scan(int[] c, Paint colour){
         for (int[] dir : directions) {
             int[] neighbor = {c[0] + dir[0], c[1] + dir[1], c[2] + dir[2]};
-
-            if(hexList.get(findId(neighbor)).getFill() == colour){
+            int inBounds = 0;
+            for (int[] i : coords) {
+                if (Arrays.equals(neighbor, i)) {
+                    inBounds = 1;
+                }
+            }
+            if (inBounds == 0) {
+                continue;
+            }else if(hexList.get(findId(neighbor)).getFill() == colour){
                 friendSize(neighbor, colour);
             } else if(hexList.get(findId(neighbor)).getFill() != colour && hexList.get(findId(neighbor)).getFill() != DODGERBLUE){
                 enemySize(neighbor, colour);
@@ -565,7 +574,15 @@ public class HelloController {
         for (int[] dir : directions) {
             int[] neighbor = {c[0] + dir[0], c[1] + dir[1], c[2] + dir[2]};
 
-            if(hexList.get(findId(neighbor)).getFill() != colour && hexList.get(findId(neighbor)).getFill() != DODGERBLUE){
+            int inBounds = 0;
+            for (int[] i : coords) {
+                if (Arrays.equals(neighbor, i)) {
+                    inBounds = 1;
+                }
+            }
+            if (inBounds == 0) {
+                continue;
+            }else if(hexList.get(findId(neighbor)).getFill() != colour && hexList.get(findId(neighbor)).getFill() != DODGERBLUE){
                 enemySize(neighbor, colour);
             }
         }
