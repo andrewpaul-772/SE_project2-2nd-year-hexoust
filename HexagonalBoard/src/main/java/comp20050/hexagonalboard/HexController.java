@@ -1,3 +1,16 @@
+/**
+ * Controller class for the Hexagonal Board game UI (hex-view.fxml).
+ * Handles user interactions, game logic (turns, moves, captures, win conditions),
+ * and updates the visual representation of the board.
+ *
+ * This class uses JavaFX for the UI elements and manages the state of a
+ * hexagonal grid game.
+ *
+ * @author lastminutemen
+ * @version 1.0
+ * @since 2025-02-01
+ */
+
 package comp20050.hexagonalboard;
  
  import java.net.URL;
